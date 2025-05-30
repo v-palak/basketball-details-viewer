@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Upcoming Matches</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NBA Upcoming Matches</h1>
+            <nav class="nav-links">
+                <div class="date-filter">
+                    <label for="dateSelect">Select Date:</label>
+                    <input type="date" id="dateSelect">
+                </div>
+                <a href="profile.html" id="profileLink" class="nav-link">Profile</a>
+                <button id="logoutBtn" class="logout-button">Logout</button>
+            </nav>
+        </header>
+        <main>
+            <div class="matches-container" id="matchesContainer">
+                <!-- Matches will be loaded here dynamically -->
+                <div class="loading" id="loading">Loading matches...</div>
+            </div>
+        </main>
+        <footer>
+            <p>Data provided by Ball Don't Lie API</p>
+        </footer>
+    </div>
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
